@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body {
+    background-color: burlywood;
+}
+header {
+    background-image: url(images/footer.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh; 
+    display: flex;
+    align-items: center;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.menu{
+    position:absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; color: olive;
+    /*con  la finalidad de que el menu se posicione en el centro*/
+}
+.menu .logo {
+    font-weight: 650;
+    font-size: 24px;
+    color: palevioletred;
+}
+.menu .navbar ul li {
+    position: relative;
+    float:left;
+}
+.menu .navbar ul li a {
+    font-size: 11px;
+    padding: 19px;
+    color:aqua;
+    display:block;
+}
+.menu .navbar ul li a:hover{
+    color:cornflowerblue;
+}
+#menu {
+    display: none;
+}
+.menu-icono {
+    width:24px;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-content {
+    display:flex;
+}
+.content {
+    padding: 150px 150px 0px 0px;
+}
+.content h1{
+    color: blueviolet;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 450;
+    line-height: 55px;
+}
+.content p {
+    margin-top: 24px;   
+    color:brown;
+    text-transform: uppercase;
+    font-size: 35px;    
+    line-height: 30px;
+}
+.btn-1 {
+    display:inline-block;
+    background-color:blanchedalmond chocolate chartreuse aqua ;
+    border: 1px solid crimson;
+    margin: 35px 10px 0px 1px;
+    padding: 15px 25px;
+    color:bisque;
+    border-radius: 29px;
+}
+.btn-1:hover {
+    background-color: black;
+}
+.services {
+    padding: 10px 0px;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.service {
+    padding: 25px;
+    margin: 0px 10px;
+    box-shadow: 0px 0px 20px black(135, 141, 214, 0.3);
+}
+.services img {
+    margin-top: -50px;
+}
+.service h3 {
+    font: size 20px;
+    color:black;
+    margin-bottom: 10;
+}
+.service p{
+    color:black;
+    font-size: 16px;
+}
+.Portfolio{
+    padding: 80px 0px;
+    text-align: center;
+        color:black
+}
+.Portfolio h2{
+    font-size:55px;
+}
+.Portfolio{
+    display:flex;
+    align-items: center;
+}
+.Portfolio img{
+    width: 350px;
+}
+.Portfolio-1{
+    text-align: left;
+    margin-left: 100px;
+}
+.Portfolio-1 h3 {
+    font: size 35px;
+    margin-bottom: 15px;
+}
+.Portfolio-1 p{
+    font-size:10px;
+    color: blue;
+    margin-bottom: 30px;
+}
+.Portfolio-2{
+    text-align: left;
+    margin-right:100px;
+}
+.Portfolio-2 h3{
+    font-size:35px;
+    margin-bottom:20px;
+}
+.Portfolio-2 p{
+    font-size: 10px;
+    color: brown;
+    margin-bottom: 30px;
+}
+.btn-2{
+    display:inline-block;
+    padding:15px;
+    border-radius:25px;
+    background-color: blueviolet;
+    color: bisque;
+}
+.btn-2 hover{
+    background-color: brown;
+}
+footer {
+    padding: 200px 0px 30px 0px;
+    background-image:url(images/1111.jpg);
+    background-position:topcenter;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.info-content{
+    display:flex
+}
+.info-price{
+    padding:35px;
+    text-align:center;
+    background-color:black;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0,0.3);
+    margin:0px 15px 0 px 0px;
+    color:black
+    }
+.info-price{
+    font-size: 25px;
+    margin-bottom:10px ;
+}
+.price{
+    font-size: 14px;
+    color:black;
+    margin-bottom: 12px;
+}
+.info-price{
+    font-size:16px;
+    color:black;
+}
+.info-text{
+    margin-left: 35px;
+    color:bisque;
+}
+hr{
+    margin:45px 0px;
+    border: 0.6px solid white;
+}
+.enlaces{
+    display:flex;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+.enlaces h3{
+    font-size: 30px;
+}
+.enlace{
+    display:flex;
+}
+.enlace li a{
+    display:block;
+    margin:20px;
+    color: beige;
+}
+.enlace li a:hover{
+    color:blanchedalmond
+}
+@media(max-width:991px){
+    .menu{
+        padding:20px
+    }
+    .menu label{
+        display:initial;
+    }
+    .menu .navbar{
+        position:absolute;
+        top: 100px; 
+        left:0;
+        right:0;
+        background-color: blanchedalmond;
+        display:none;
+    }
+    .menu .navbar ul li{
+        width:100%;
+    }
+    #menu:checked ~ .navbar{
+        display:initial;
+    }
+}
